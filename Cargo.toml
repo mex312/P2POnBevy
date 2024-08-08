@@ -1,0 +1,18 @@
+[package]
+name = "ptpOnBevy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+az = "1.2.1"
+bevy = "0.14.1"
+bevy_ggrs = "0.16.0"
+bytemuck = "1.16.3"
+fixed = "1.28.0"
+clap = { version = "4.5.14", features = ["derive"] }
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
